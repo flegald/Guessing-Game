@@ -1,7 +1,4 @@
-var one = document.getElementById('one');
-var two = document.getElementById('two');
-var three = document.getElementById('three');
-var four = document.getElementById('four');
+
 var quests = ['Was I born in Portland?', 'Am I engaged?', 'Do I play WOW?'];
 var answers = ['yes', 'y', 'no', 'n'];
 var num = 0;
