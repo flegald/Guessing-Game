@@ -9,14 +9,14 @@ var num = 0;
 function quest1() {
 	var q1 = prompt(quests[0]).toLowerCase();
 		if (q1 === answers[0] || q1 === answers[1]){
-			one.innerHTML = 'Correct';
+			oneY.innerHTML = 'Correct';
 			pic1.innerHTML = '<img src= "images/portland.jpg" width= "200"/>';
 			num++;
 		} else if (q1 === answers[2] || q1 === answers[3]){
-			one.innerHTML = 'Incorrect';
+			oneN.innerHTML = 'Incorrect';
 
 		} else {
-			one.innerHTML = 'Please type yes or no';
+			oneN.innerHTML = 'Please type yes or no';
 
 		}
 } 
@@ -24,14 +24,14 @@ function quest1() {
 function quest2() {
 	var q2 = prompt(quests[1]).toLowerCase();
 		if (q2 === answers[0] ||q2 === answers[1]){
-			two.innerHTML = 'Correct';
+			twoY.innerHTML = 'Correct';
 			pic2.innerHTML = '<img src= "images/ring.jpeg" width= "200"/>';
 			num++;
 		} else if (q2 === answers[2] || q2=== answers[3]){
-			two.innerHTML = 'Incorrect';
+			twoN.innerHTML = 'Incorrect';
 
 		} else {
-			two.innerHTML = 'Please type yes or no';
+			twoN.innerHTML = 'Please type yes or no';
 
 		}
 }
@@ -39,15 +39,15 @@ function quest2() {
 function quest3() {
 	var q3 = prompt(quests[2]).toLowerCase();
 		if (q3 === answers[2] || q3 === answers[3]){
-			three.innerHTML = 'Correct';
+			threeN.innerHTML = 'Correct';
 			pic3.innerHTML = '<img src= "images/wow.jpg" width= "200"/>';
 
 			num++;
 		} else if (q3 === answers[0] || q3 === answers[1]){
-			three.innerHTML = 'Incorrect';
+			threeY.innerHTML = 'Incorrect';
 
 		} else {
-			three.innerHTML = 'Please type yes or no';
+			threeY.innerHTML = 'Please type yes or no';
 
 		}
 }
