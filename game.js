@@ -10,7 +10,7 @@ function quest1() {
 	var q1 = prompt(quests[0]).toLowerCase();
 		if (q1 === answers[0] || q1 === answers[1]){
 			one.innerHTML = 'Correct';
-
+			pic1.innerHTML = '<img src= "images/portland.jpg" width= "200"/>';
 			num++;
 		} else if (q1 === answers[2] || q1 === answers[3]){
 			one.innerHTML = 'Incorrect';
@@ -25,7 +25,7 @@ function quest2() {
 	var q2 = prompt(quests[1]).toLowerCase();
 		if (q2 === answers[0] ||q2 === answers[1]){
 			two.innerHTML = 'Correct';
-
+			pic2.innerHTML = '<img src= "images/ring.jpeg" width= "200"/>';
 			num++;
 		} else if (q2 === answers[2] || q2=== answers[3]){
 			two.innerHTML = 'Incorrect';
@@ -40,6 +40,7 @@ function quest3() {
 	var q3 = prompt(quests[2]).toLowerCase();
 		if (q3 === answers[2] || q3 === answers[3]){
 			three.innerHTML = 'Correct';
+			pic3.innerHTML = '<img src= "images/wow.jpg" width= "200"/>';
 
 			num++;
 		} else if (q3 === answers[0] || q3 === answers[1]){
