@@ -40,7 +40,7 @@ function quest3() {
 	var q3 = prompt(quests[2]).toLowerCase();
 		if (q3 === answers[2] || q3 === answers[3]){
 			threeN.innerHTML = 'Correct';
-			pic3.innerHTML = '<img src= "images/wow.jpg" width= "200"/>';
+			pic3.innerHTML = '<img src= "images/WOW.jpg" width= "200"/>';
 
 			num++;
 		} else if (q3 === answers[0] || q3 === answers[1]){
