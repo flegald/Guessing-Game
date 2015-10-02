@@ -2,54 +2,52 @@ var one = document.getElementById('one');
 var two = document.getElementById('two');
 var three = document.getElementById('three');
 var four = document.getElementById('four');
-
-var q1Answer; 
-var q2Answer;
-var q3Answer;
+var quests = ['Was I born in Portland?', 'Am I engaged?', 'Do I play WOW?'];
+var answers = ['yes', 'y', 'no', 'n'];
 var num = 0;
 
 function quest1() {
-	var q1 = prompt('Was I born in Portland?').toLowerCase();
-		if (q1 === 'yes' || q1 === 'y'){
+	var q1 = prompt(quests[0]).toLowerCase();
+		if (q1 === answers[0] || q1 === answers[1]){
 			one.innerHTML = 'Correct';
-			q1Answer = 'Correct';
+
 			num++;
-		} else if (q1 === 'no' || q1 === 'n'){
+		} else if (q1 === answers[2] || q1 === answers[3]){
 			one.innerHTML = 'Incorrect';
-			q1Answer = 'Incorrect';
+
 		} else {
 			one.innerHTML = 'Please type yes or no';
-			q1Answer = 'Invalid';
+
 		}
-}
+} 
 
 function quest2() {
-	var q2 = prompt('Am I engaged?').toLowerCase();
-		if (q2 === 'yes' ||q2 === 'y'){
+	var q2 = prompt(quests[1]).toLowerCase();
+		if (q2 === answers[0] ||q2 === answers[1]){
 			two.innerHTML = 'Correct';
-			q2Answer = 'Correct';
+
 			num++;
-		} else if (q2 === 'no' || q2==='n'){
+		} else if (q2 === answers[2] || q2=== answers[3]){
 			two.innerHTML = 'Incorrect';
-			q2Answer= 'Incorrect';
+
 		} else {
 			two.innerHTML = 'Please type yes or no';
-			q2Answer = 'Invalid';
+
 		}
 }
 
 function quest3() {
-	var q3 = prompt('Do I play WOW?').toLowerCase();
-		if (q3 === 'no' || q3 === 'n'){
+	var q3 = prompt(quests[2]).toLowerCase();
+		if (q3 === answers[2] || q3 === answers[3]){
 			three.innerHTML = 'Correct';
-			q3Answer = 'Correct';
+
 			num++;
-		} else if (q3 === 'yes' || q3 === 'y'){
+		} else if (q3 === answers[0] || q3 === answers[1]){
 			three.innerHTML = 'Incorrect';
-			q3Answer = 'Incorrect';
+
 		} else {
 			three.innerHTML = 'Please type yes or no';
-			q3Answer = 'Invalid';
+
 		}
 }
 
