@@ -1,0 +1,13 @@
+.correct{
+	color: green;
+}
+.wrong{
+	color: red;
+}
+
+body{
+	background-color: gray;
+	font-family: Courier;
+	color: yellow;
+}
+

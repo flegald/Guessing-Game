@@ -2,54 +2,53 @@ var one = document.getElementById('one');
 var two = document.getElementById('two');
 var three = document.getElementById('three');
 var four = document.getElementById('four');
-
-var q1Answer; 
-var q2Answer;
-var q3Answer;
+var quests = ['Was I born in Portland?', 'Am I engaged?', 'Do I play WOW?'];
+var answers = ['yes', 'y', 'no', 'n'];
 var num = 0;
 
 function quest1() {
-	var q1 = prompt('Was I born in Portland?').toLowerCase();
-		if (q1 === 'yes' || q1 === 'y'){
-			one.innerHTML = 'Correct';
-			q1Answer = 'Correct';
+	var q1 = prompt(quests[0]).toLowerCase();
+		if (q1 === answers[0] || q1 === answers[1]){
+			oneY.innerHTML = 'Correct';
+			pic1.innerHTML = '<img src= "images/portland.jpg" width= "200"/>';
 			num++;
-		} else if (q1 === 'no' || q1 === 'n'){
-			one.innerHTML = 'Incorrect';
-			q1Answer = 'Incorrect';
+		} else if (q1 === answers[2] || q1 === answers[3]){
+			oneN.innerHTML = 'Incorrect';
+
 		} else {
-			one.innerHTML = 'Please type yes or no';
-			q1Answer = 'Invalid';
+			oneN.innerHTML = 'Please type yes or no';
+
 		}
-}
+} 
 
 function quest2() {
-	var q2 = prompt('Am I engaged?').toLowerCase();
-		if (q2 === 'yes' ||q2 === 'y'){
-			two.innerHTML = 'Correct';
-			q2Answer = 'Correct';
+	var q2 = prompt(quests[1]).toLowerCase();
+		if (q2 === answers[0] ||q2 === answers[1]){
+			twoY.innerHTML = 'Correct';
+			pic2.innerHTML = '<img src= "images/ring.jpeg" width= "200"/>';
 			num++;
-		} else if (q2 === 'no' || q2==='n'){
-			two.innerHTML = 'Incorrect';
-			q2Answer= 'Incorrect';
+		} else if (q2 === answers[2] || q2=== answers[3]){
+			twoN.innerHTML = 'Incorrect';
+
 		} else {
-			two.innerHTML = 'Please type yes or no';
-			q2Answer = 'Invalid';
+			twoN.innerHTML = 'Please type yes or no';
+
 		}
 }
 
 function quest3() {
-	var q3 = prompt('Do I play WOW?').toLowerCase();
-		if (q3 === 'no' || q3 === 'n'){
-			three.innerHTML = 'Correct';
-			q3Answer = 'Correct';
+	var q3 = prompt(quests[2]).toLowerCase();
+		if (q3 === answers[2] || q3 === answers[3]){
+			threeN.innerHTML = 'Correct';
+			pic3.innerHTML = '<img src= "images/wow.jpg" width= "200"/>';
+
 			num++;
-		} else if (q3 === 'yes' || q3 === 'y'){
-			three.innerHTML = 'Incorrect';
-			q3Answer = 'Incorrect';
+		} else if (q3 === answers[0] || q3 === answers[1]){
+			threeY.innerHTML = 'Incorrect';
+
 		} else {
-			three.innerHTML = 'Please type yes or no';
-			q3Answer = 'Invalid';
+			threeY.innerHTML = 'Please type yes or no';
+
 		}
 }
 
